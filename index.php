@@ -32,8 +32,8 @@ set_lang($set_lang,$def_charset);
 
 
 function check_lang(&$lang,$languages,$def_lang){
-	if(!in_array($lang , array("en_US","pl_PL"))){
-			$lang="pl_PL";
+	if( !isset($languages[$lang]) ){
+			$lang=$def_lang;
 	}
 }
 
